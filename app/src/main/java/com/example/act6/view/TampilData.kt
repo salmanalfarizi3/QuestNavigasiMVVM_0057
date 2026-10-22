@@ -25,3 +25,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.act6.R
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun TampilData(
+    onBackBtnClick: () -> Unit
+){
+    val item = listOf(
+        Pair(stringResource(id = R.string.nama_Lengkap), "Contoh Nama"),
+        Pair(stringResource(id = R.string.jenis_kelamin), "Laki-laki"),
+        Pair(stringResource(id = R.string.alamat), "Yogyakarta")
+    )
