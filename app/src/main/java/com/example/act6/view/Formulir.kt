@@ -34,3 +34,14 @@ import java.text.Normalizer
 fun FormIsian(
     jenisK: List<String> = listOf("Laki-Laki", "Perempuan"),
     onSubmitBtnClick: () -> Unit
+) {
+    Scaffold(
+        modifier = Modifier.fillMaxSize(),
+        topBar = {
+            TopAppBar(
+                title = { Text(text = stringResource(id = R.string.home), color = Color.White) },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = colorResource(id = R.color.teal_700)
+                )
+            )
+        }
